@@ -31,7 +31,7 @@ class wpclievalselectionCommand(sublime_plugin.TextCommand):
             code = self.view.substr(region)
 
             # shell script
-            script = 'pwd; wp eval "$(cat <<EOF' + '\n' + code + '\n' + 'EOF)"'
+            script = 'wp eval "$(cat <<EOF' + '\n' + code + '\n' + 'EOF)"'
 
             if settings['cli_path']:
                 script += ' --path=' + settings['cli_path']
