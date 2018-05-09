@@ -8,7 +8,7 @@ Add a shortcut to run this tool while pressing a bunch of keys:
 { "keys": ["shift+ctrl+e"], "command": "wpclievalselection" }
 ```
 
-This will execute the command when you press <kbd>shift</kbd>+<kbd>ctrl</kbd>+<kbd>c</kbd> combined. And of course you can set the letters of your choosing.
+This will execute the command when you press <kbd>shift</kbd>+<kbd>ctrl</kbd>+<kbd>e</kbd> combined. And of course you can set the letters of your choosing.
 
 Here's an example output:
 
