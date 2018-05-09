@@ -5,10 +5,10 @@ This Sublime Text extension allows you to easily debug parts of your code with [
 Add a shortcut to run this tool while pressing a bunch of keys: 
 
 ```json
-{ "keys": ["shift+ctrl+c"], "command": "wpclievalselection" }
+{ "keys": ["shift+ctrl+e"], "command": "wpclievalselection" }
 ```
 
-This will execute the command when you press <kbd>shift</kbd>+<kbd>ctrl</kbd>+<kbd>c</kbd> combined.
+This will execute the command when you press <kbd>shift</kbd>+<kbd>ctrl</kbd>+<kbd>c</kbd> combined. And of course you can set the letters of your choosing.
 
 Here's an example output:
 
