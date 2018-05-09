@@ -36,6 +36,8 @@ class wpclievalselectionCommand(sublime_plugin.TextCommand):
             if settings['cli_path']:
                 script += ' --path=' + settings['cli_path']
             elif not working_dir:
+                # if no wp root path supplied through settings, cd into the file directory
+                # this will make wp cli locate the root path
                 working_dir = getcwd()
                 chdir(path.dirname( self.view.file_name() ))
 
@@ -77,4 +79,5 @@ class wpclievalselectionCommand(sublime_plugin.TextCommand):
             if working_dir: # popd
                 chdir( working_dir )
         else:
+            # called without code selection
             sublime.status_message('No selections to evaluate!')
