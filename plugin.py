@@ -1,7 +1,7 @@
 import sublime, sublime_plugin
 from subprocess import Popen, PIPE
 from sys import getfilesystemencoding
-from time import time,sleep
+from time import time
 from os import path, chdir, getcwd
 
 class wpclievalselectionCommand(sublime_plugin.TextCommand):
