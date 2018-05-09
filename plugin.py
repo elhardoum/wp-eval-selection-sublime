@@ -69,9 +69,12 @@ class wpclievalselectionCommand(sublime_plugin.TextCommand):
 
         if status:
             # sublime.status_message('Writing full eval log')
+            # open a new tab
             f = window.new_file()
+            # paste the command status
             f.insert( edit, 0, '\n' + status )
 
-            if working_dir:
-                # popd
+            if working_dir: # popd
                 chdir( working_dir )
+        else:
+            sublime.status_message('No selections to evaluate!')
